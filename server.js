@@ -2,6 +2,9 @@
 const http = require("http"); // http server core module
 const path = require("path");
 const express = require("express"); // web framework external module
+const cors = require('cors');
+
+app.use(cors());
 
 // Set process name
 process.title = "networked-aframe-server";
